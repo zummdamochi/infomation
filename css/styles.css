@@ -75,6 +75,15 @@ header {
   font-size: 16px;
 }
 
+.boverlay > p > a {
+  color: #000;
+  text-decoration: none;
+}
+
+.boverlay > p > a:hover {
+  opacity: 0.5;
+}
+
 .noverlay.show,
 .boverlay.show,
 .ooverlay.show {
