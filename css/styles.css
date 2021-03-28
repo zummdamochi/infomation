@@ -11,7 +11,7 @@ body {
 
 h1 {
   margin: 10px auto;
-  width: 300px;
+  width: 90%;
   font-size: 24px;
   text-align: center;
 }
@@ -39,7 +39,9 @@ header {
   transition: all .3s ease;
 }
 
-.overlay {
+.noverlay,
+.boverlay,
+.ooverlay {
   position: fixed;
   top: 50px;
   right: 50px;
@@ -56,23 +58,33 @@ header {
   z-index: 1;
 }
 
-.overlay > h1 {
-  font-size: 20px;
-  margin-top: 50px;
+.noverlay > h1,
+.boverlay > h1,
+.ooverlay > h1 {
+  font-size: 18px;
+  margin: 30px auto;
+  width: 200px;
+  text-align: center;
 }
 
-.overlay > p {
+.noverlay > p,
+.boverlay > p,
+.ooverlay > p {
   width: 70%;
   margin: 20px auto;
   font-size: 16px;
 }
 
-.overlay.show {
+.noverlay.show,
+.boverlay.show,
+.ooverlay.show {
   opacity: 1;
   pointer-events: auto;
 }
 
-#close {
+#nclose,
+#bclose,
+#oclose {
   border: none;
   width: 50px;
   height: 50px;
@@ -115,7 +127,7 @@ section {
 #btn {
   width: 40%;
   text-align: left;
-  margin-left: 10px;
+  margin-left: 5px;
 }
 
 #btn > a {
@@ -125,11 +137,12 @@ section {
 
 article > #btn a:hover {
   color: rgb(7, 85, 243);
+  font-weight: bold;
   cursor: pointer;
 }
 
 #middle {
-  width: 30%;
+  width: 20%;
 }
 
 article {
@@ -242,6 +255,20 @@ span {
     height: 45px;
     line-height: 45px;
     font-size: 20px;
+  }
+
+  .noverlay > h1,
+  .boverlay > h1,
+  .ooverlay > h1 {
+    font-size: 20px;
+    width: 70%;
+  }
+
+  .noverlay > p,
+  .boverlay > p,
+  .ooverlay > p {
+    width: 70%;
+    font-size: 16px;
   }
 
   .title p {

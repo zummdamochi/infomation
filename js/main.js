@@ -11,15 +11,37 @@
   }
   
   const notice = document.querySelector('.notice');
-  const overlay = document.querySelector('.overlay');
-  const close = document.getElementById('close');
+  const backno = document.querySelector('.backno');
+  const opinion = document.querySelector('.opinion');
+  const noverlay = document.querySelector('.noverlay');
+  const boverlay = document.querySelector('.boverlay');
+  const ooverlay = document.querySelector('.ooverlay');
+  const nclose = document.getElementById('nclose');
+  const bclose = document.getElementById('bclose');
+  const oclose = document.getElementById('oclose');
 
   notice.addEventListener('click' , () => {
-    overlay.classList.add('show');
+    noverlay.classList.add('show');
   });
 
-  close.addEventListener('click' , () => {
-    overlay.classList.remove('show');
+  nclose.addEventListener('click' , () => {
+    noverlay.classList.remove('show');
+  });
+  
+  backno.addEventListener('click' , () => {
+    boverlay.classList.add('show');
+  });
+  
+  bclose.addEventListener('click' , () => {
+    boverlay.classList.remove('show');
+  });
+  
+  opinion.addEventListener('click' , () => {
+    ooverlay.classList.add('show');
   });
 
+  oclose.addEventListener('click' , () => {
+    ooverlay.classList.remove('show');
+    });
+  
 }
