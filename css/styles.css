@@ -86,12 +86,18 @@ header {
 #bclose,
 #oclose {
   border: none;
-  width: 50px;
-  height: 50px;
+  width: 40px;
+  height: 40px;
   float: right;
   margin-top: 10px;
   margin-right: 10px;
   cursor: pointer;
+}
+
+#nclose:hover,
+#bclose:hover,
+#oclose:hover {
+  opacity: 0.5;
 }
 
 main {
